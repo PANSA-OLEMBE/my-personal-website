@@ -1,71 +1,72 @@
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('Achtergrond_OP.jpg');
-    background-size: auto;
-    background-repeat: no-repeat;
-    min-height: 100vh; /* Ensure the background covers the full viewport height */
-    display: flex;
-    flex-direction: column;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('Achtergrond OP.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensure the background covers the full viewport height */
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    background-color: #282c34;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    background-coler:green;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #61dafb;
+  padding: 10px;
 }
 
 nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 section {
-    padding: 20px;
+  padding: 20px;
 }
 
 footer {
-    background-color: #282c34;
-    color: white;
-    text-align: center;
-    padding: 10px;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
 .content {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
 }
 
 /* Arrange contact and about sections side by side */
 section#about,
 section#contact {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 section#about .content,
 section#contact .content {
-    width: calc(50% - 20px); /* Adjust width as necessary */
+  width: calc(50% - 20px); /* Adjust width as necessary */
 }
 
 
