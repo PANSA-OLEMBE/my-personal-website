@@ -1,31 +1,44 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f4f4f9; /* Fallback background color */
     color: #333;
     margin: 0;
     padding: 0;
+    background-image: url('https://pngtree.com/freebackground/smart-robot-arm-advertising-background_969305.html');
+    background-size: cover; /* Adjust as necessary */
+    background-repeat: no-repeat;
 }
+
+/* Ensure the background image covers the entire body */
+html, body {
+    height: 100%;
+}
+
 header {
     background-color: #282c34;
     color: white;
     padding: 20px;
     text-align: center;
 }
+
 nav {
     display: flex;
     justify-content: center;
     background-color: #61dafb;
     padding: 10px;
 }
+
 nav a {
     margin: 0 15px;
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
+
 section {
     padding: 20px;
 }
+
 footer {
     background-color: #282c34;
     color: white;
@@ -35,10 +48,12 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
 .content {
     max-width: 800px;
     margin: 0 auto;
 }
+
 .profile-pic {
     width: 150px;
     height: 150px;
@@ -46,3 +61,4 @@ footer {
     display: block;
     margin: 20px auto;
 }
+
