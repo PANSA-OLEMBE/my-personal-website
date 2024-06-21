@@ -3,14 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('https://pngtree.com/freebackground/smart-robot-arm-advertising-background_969305.html');
-    background-size: cover; /* Adjust as necessary */
+    background-size: cover;
     background-repeat: no-repeat;
-}
-
-/*ik kan het alstijd aanpasen*/
-/* Ensure the background image covers the entire body */
-html, body {
-    height: 100%;
+    min-height: 100vh; /* Ensure the background covers the full viewport height */
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -43,9 +40,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
 
 .content {
@@ -60,4 +54,18 @@ footer {
     display: block;
     margin: 20px auto;
 }
+
+/* Arrange contact and about sections side by side */
+section#about,
+section#contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+section#about .content,
+section#contact .content {
+    width: calc(50% - 20px); /* Adjust width as necessary */
+}
+
 
